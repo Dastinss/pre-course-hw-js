@@ -63,17 +63,17 @@ const users = [
 	}
 ];
 //============================================================
-// const evenUsers = () => {
-// 	return users.filter( u => u.id % 2===0)
-// }
-// console.log(evenUsers())
+const evenUsers = () => {
+	return users.filter( u => u.id % 2===0)
+}
+console.log(evenUsers())
 //============================================================
-let evenArray = [];
-users.filter(u => {
-	if (!(u.id % 2)) {
-		evenArray.push(u);
-		return evenArray
-	}
-})
-console.log(evenArray)
+// let evenArray = [];
+// users.filter(u => {
+// 	if (!(u.id % 2)) {
+// 		evenArray.push(u);
+// 		return evenArray
+// 	}
+// })
+// console.log(evenArray)
 //=============================================================
