@@ -63,8 +63,17 @@ const users = [
 	}
 ];
 
-const oddUsers = () => {
-	return users.filter( u => u.id % 2===0)
-}
+// const oddUsers = () => {
+// 	return users.filter( u => u.id % 2===0)
+// }
 
-console.log(oddUsers())
+let evenArray = [];
+users.filter(u => {
+	let uEven = !(u.id % 2);
+	if (uEven) {
+		evenArray.push(u);
+		return uEven
+	}
+})
+
+console.log(evenArray)
