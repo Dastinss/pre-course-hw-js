@@ -62,18 +62,18 @@ const users = [
 		address: '753 Cherry St'
 	}
 ];
-
-// const oddUsers = () => {
+// //============================================================
+// const evenUsers = () => {
 // 	return users.filter( u => u.id % 2===0)
 // }
-
+// console.log(evenUsers())
+//============================================================
 let evenArray = [];
 users.filter(u => {
-	let uEven = !(u.id % 2);
-	if (uEven) {
+	if (!(u.id % 2)) {
 		evenArray.push(u);
-		return uEven
+		return evenArray
 	}
 })
-
 console.log(evenArray)
+//=============================================================
